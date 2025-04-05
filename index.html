@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XRP Mini Farm</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>XRP Farm 🌱</h1>
+    <p id="user-id">Loading...</p>
+    <p>Balance: <span id="balance">--</span> XRP</p>
+    
+    <button onclick="claimDaily()">🎁 Daily Login</button>
+    
+    <div id="shop">
+      <h2>🛒 Shop</h2>
+      <div id="boosters"></div>
+    </div>
+
+    <button onclick="withdraw()">💸 Withdraw</button>
+    <div id="referral">
+      <h3>👥 Invite Friends</h3>
+      <div id="share-buttons"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
